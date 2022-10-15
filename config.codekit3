@@ -7,7 +7,7 @@
       "uuidString" : "5E328821-3AC9-42D1-A4B1-621255E68FCE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -191,6 +191,14 @@
       "oAP" : "\/build\/less\/variables.less.less",
       "oF" : 0
     },
+    "\/LICENSE" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/LICENSE",
+      "oF" : 0
+    },
     "\/note.less.tmp.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -198,6 +206,25 @@
       "oA" : 0,
       "oAP" : "\/build\/note.less.tmp.html",
       "oF" : 0
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/Squarespace-Backup" : {
       "ft" : 65536,
@@ -925,7 +952,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
@@ -1773,7 +1801,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,_cache,cache,Squarespace-Backup",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,Squarespace-Backup,node_modules,_logs,logs,log,.idea,_cache,cache,README.md,LICENSE",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,
