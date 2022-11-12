@@ -45,7 +45,7 @@
 @black-bold-background-color: hsl(40, 95%, 2%);
 
 .fontawesome() {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   display: inline-block;
   font-style: normal;
@@ -55,7 +55,7 @@
 }
 
 .fontawesomeBrands() {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 6 Brands";
   font-weight: 400;
   display: inline-block;
   font-style: normal;
@@ -495,7 +495,7 @@ ul.dcm-podcast-links {
     justify-content: center;
     padding: 20px;
     position: relative;
-    width: 165px;
+    width: 180px;
     
     .header-actions-action--social {
       order: 2;
@@ -690,7 +690,8 @@ ul.dcm-podcast-links {
 
 
 body,
-.sqs-catalog .section-background {
+.section-border .section-background,
+.sqs-catalog .section-background  {
   background-image: url(https://images.squarespace-cdn.com/content/608c4a4b74f4f609a37226d1/1621609824190-2RMJTOU5UCFBAPY5RQRS/woodgrain.png);
   background-position: top center;
   background-repeat: repeat;
@@ -795,16 +796,6 @@ body,
           background-color: transparent;
         }
       }
-      
-      .content-wrapper {
-        //padding-left: 0;
-        //padding-right: 0;
-      }
-      
-      .content {
-        //padding-left: 3vw;
-        //padding-right: 3vw;
-      }
     }
     
     &:not(:first-of-type) {
@@ -870,11 +861,11 @@ body,
 
 
     &.has-background:first-of-type {
-        & > .section-background {
-          box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
-          -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
-          -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
-        }
+      & > .section-border .section-background {
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+      }
 
       &.background-width--full-bleed {
         & > .section-background {
@@ -888,6 +879,12 @@ body,
         }
         &.section-height--small {
           padding-bottom: @small-overlap;
+        }
+      }
+      
+      & + .page-section {
+        .content-wrapper {
+          margin-top: -@large-overlap/2;
         }
       }
     }
@@ -958,17 +955,6 @@ body,
 
 
 .blog-side-by-side {
-  //.blog-image-wrapper {
-    //border-radius: 3px;
-    //
-    //.image-wrapper {
-      //border-radius: 3px;
-      //box-shadow: -1px 5px 2px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.25);
-      //-webkit-box-shadow: -1px 5px 2px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.25);
-      //-moz-box-shadow: -1px 5px 2px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.25);
-    //}
-  //}
-//
   article:last-of-type {
     margin-bottom: 0;
   }
@@ -1507,23 +1493,6 @@ section:not(.white):not(.black-bold) {
     &:not(:first-of-type) {
       .content-wrapper {
         margin-top: 0;
-        
-        .image-block {
-          padding-bottom: 0;
-
-          .sqs-block-image-figure {
-            max-width: 100px !important;
-            overflow: visible !important;
-            
-            .image-block-wrapper {
-              overflow: visible !important;
-
-              img {
-                filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.25));
-              }
-            }
-          }
-        }
       }
     }
       
