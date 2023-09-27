@@ -1,0 +1,106 @@
+/* ////// CODEMIRROR ////// */
+
+article {
+  
+  code, kbd, pre, samp {
+    font-family: Source Code Pro,Menlo,Consolas,Monaco,monospace;
+    font-size: 0.8em;
+  }
+  
+  code {
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    //color: red;
+    padding: 0 0.15em;
+  }
+
+  .source-code, pre {
+    background-color: #222 !important;
+    border: none !important;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.85em !important;
+    line-height: 1.4;
+    padding: 1em 1.5em;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    
+    span { white-space: pre-wrap; }
+    
+  }
+  
+    
+  span.cm-variable, 
+  span.cm-attribute,
+  span.cm-property,
+  span.cm-def + span.cm-keyword,
+  span.cm-attribute + span.cm-operator {
+    color: #ff8;
+  }
+  .cm-s-markdown {
+    line-height: 15px;
+  }
+  span.cm-strong,
+  span.cm-header {
+    font-weight: bold;
+    color: #f4f4f4;
+  }
+  span.cm-quote {
+    font-weight: bold;
+    color: #2060A0;
+  }
+  span.cm-atom,
+  span.cm-builtin,
+  span.cm-tag,
+  span.cm-qualifier {
+    color: #59bCb5 !important;
+  }
+  span.cm-number,
+  span.cm-property + span.cm-operator + span.cm-string,
+  span.cm-def + span.cm-keyword + span.cm-attribute + span.cm-operator + span.cm-property,
+  span.cm-def + span.cm-keyword + span.cm-attribute + span.cm-operator + span.cm-property + span.cm-operator + span.cm-number + span.cm-tag,
+  span.cm-def + span.cm-operator + span.cm-builtin  {
+    color: #ffb !important;
+  }
+  span.cm-comment,
+  span.cm-string,
+  span.cm-string-2,
+  span.cm-variable-2,
+  span.cm-def,
+  span.cm-null {
+    color: #fff;
+  }
+  span.cm-keyword {
+    color: #f96 !important;
+  }
+  
+  pre.markdown {
+    background-color: #eee !important;
+    color: black;
+    font-size: 0.8em !important;
+
+    .md-heading { 
+      font-weight: bold;
+    }
+    
+    .md-bold {
+      font-weight: bold;
+    }
+    
+    .md-italic {
+      font-style: italic;
+    }
+    
+    .md-list {
+      color: #2060a0;
+      font-weight: bold;
+    }
+  }
+  
+}
+
+/* ////// END CODEMIRROR ////// */

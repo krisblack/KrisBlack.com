@@ -1,70 +1,17 @@
-// Summary Block
-
-.sqs-block-summary-v2 {
-  
-  .summary-item.sqs-gallery-design-list-slide.summary-item-has-thumbnail {
-    display: flex;
-    align-items: center;
-    
-    .summary-thumbnail-outer-container {
-      align-self: flex-start;
-    }
-  }
-  .summary-block-setting-text-size-extralarge {
-    .summary-title {
-      font-family: katarine-web;
-      font-size: calc(2.2 * 1rem);
-      font-weight: 600;
-    }
+// Form Block
+.form-wrapper {
+  input, textarea {
+    border: 2px solid @black !important;
+    box-shadow: inset 2px 2px 8px rgba(0,0,0,0.25) !important;
+    padding: 0.5rem 1rem !important;
   }
 }
 
-blockquote {
-  font-style: italic;
-  margin: 0;
-  position: relative;
-  
-  * {
-    z-index: 2;
-  }
-  
-  &:before {
-    .fontawesome();
-    color: fadeout(@bright-inverse-background-color, 75%);
-    content: "\f10e";
-    display: inline-block;
-    font-size: 4em;
-    left: -10px;
-    position: absolute;
-    top: -0.48em;
-    z-index: 1;
+// Newsletter Block
+.form-fields {
+  .field-element {
+    border: 2px solid @black;
+    box-shadow: inset 2px 2px 8px rgba(0,0,0,0.25) !important;
+    padding: 0.5rem 1rem !important;
   }
 }
-
-.archive-block-wrapper {
-  &.archive-block-setting-layout-list {
-    &.archive-block-setting-text-alignment-center {
-      &.archive-block-setting-multicolumns {
-        
-        ul {
-          display: flex;
-          justify-content: center;
-          
-          li {
-            &:before {
-              .fontawesome();
-              color: lighten(@body-text-color, 45%);
-              content: "\f30b";
-              display: inline-block;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.formkit-form {
-  margin: 0 auto;
-}
-

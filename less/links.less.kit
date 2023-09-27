@@ -7,8 +7,9 @@ p a,
 .summary-read-more-link,
 .portfolio-text *,
 .blog-more-link,
-.archive-group-name-link {
-  box-shadow: inset 0 calc(0.2 * -1em) 0 -1px @comic-orange;
+.archive-group-name-link,
+.markdown-block a {
+  box-shadow: inset 0 calc(0.15 * -1em) 0 -1px currentcolor;
   //font-weight: 500;
   padding: 1px 2px 2px;
   position: relative;
@@ -22,7 +23,7 @@ p a,
   }
   
   &:hover {
-    box-shadow: inset 0 calc(2 * -1em) 0 -1px fadeout(lighten(@comic-orange, 20%), 10%);
+    box-shadow: inset 0 calc(2 * -1em) 0 -1px @comic-yellow;
     color: #000;
     opacity: 1 !important;
   }
@@ -34,68 +35,4 @@ p a,
 
 .portfolio-text * {
   display: inline;
-}
-
-
-
-ul.dcm-podcast-links {
-  list-style-type: none;
-  padding-left: 0;
-  
-  li {
-    margin-bottom: 0.5em;
-  }
-  
-  a {
-    text-decoration: underline;
-    border-bottom: 0;
-    
-    &:before {
-      background-repeat: no-repeat;
-      background-size: 1em;
-      content: " ";
-      display: inline-block;
-      height: 1em;
-      left: 0;
-      margin-right: 0.5em;
-      vertical-align: middle;
-      width: 1em;
-    }
-    
-    &[href^="https://podcasts.apple.com"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/apple-podcasts-icon-color.svg);
-      }
-    }
-    
-    &[href^="https://playmusic.app.goo.gl"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/google-play-icon-color.svg);
-      }
-    }
-    
-    &[href^="https://overcast.fm"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/overcast-icon-color.svg);
-      }
-    }
-    
-    &[href^="https://www.drivencreativelymad.com"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/rss-icon-color.svg);
-      }
-    }
-    
-    &[href^="https://open.spotify.com"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/spotify-icon-color.svg);
-      }
-    }
-    
-    &[href^="https://www.stitcher.com"] {
-      &:before {
-        background-image: url(https://www.drivencreativelymad.com/s/stitcher-icon-color.svg);
-      }
-    }
-  }
 }

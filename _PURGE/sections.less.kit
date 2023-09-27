@@ -1,0 +1,263 @@
+body,
+.section-border .section-background,
+.sqs-catalog .section-background  {
+  background-image: url(https://images.squarespace-cdn.com/content/608c4a4b74f4f609a37226d1/1621609824190-2RMJTOU5UCFBAPY5RQRS/woodgrain.png);
+  background-position: top center;
+  background-repeat: repeat;
+}
+
+// Allow body background image to show by setting backgrounds of sections to transparent
+.page-section,
+.section-background,
+#footer-sections,
+#footer-sections .page-section {
+  background-color: transparent !important;
+}
+
+.page-section {
+  .content-wrapper {
+    background-color: @white-background-color;
+  }
+}
+
+.page-section.white  {
+  .content-wrapper {
+    background-color: @white-background-color;
+  }
+}
+
+.page-section.white-bold {
+ .content-wrapper {
+    background-color: @white-bold-background-color;
+  }
+}
+
+
+// Background Colors for Section Content Wrappers
+.page-section {
+  &.light {
+    .content-wrapper {
+      background-color: @light-background-color;
+    }
+  }
+  
+  &.light-bold {
+    .content-wrapper {
+      background-color: @light-bold-background-color;
+    }
+  }
+  
+  &.bright-inverse {
+    .content-wrapper {
+      background-color: @bright-inverse-background-color;
+    }
+  }
+  
+  &.bright {
+    .content-wrapper {
+      background-color: @bright-background-color;
+    }
+  }
+  
+  &.dark {
+    .content-wrapper {
+      background-color: @dark-background-color;
+    }
+  }
+  
+  &.dark-bold {
+    .content-wrapper {
+      background-color: @dark-bold-background-color;
+    }
+  }
+  
+  &.black {
+    .content-wrapper {
+      background-color: @black-background-color;
+    }
+  }
+  
+  &.black-bold {
+    .content-wrapper {
+      background-color: @black-bold-background-color;
+    }
+  }
+}
+
+#sections {
+  .page-section {
+    &:first-of-type {
+      padding-left: 0;
+      padding-right: 0;
+      
+      &:not(.has-background) {
+        align-items: stretch;
+        justify-content: flex-end;
+        min-height: auto;
+      }
+      
+      &.has-background {
+        h1, h2, h3, h4, h5, h6, p, ul, ol {
+          text-shadow: 0 2px 1px fadeout(@caption-black, 70%);
+        }
+        
+        .content-wrapper {
+          background-color: transparent;
+        }
+      }
+    }
+    
+    &:not(:first-of-type) {
+      &.has-background {
+        .content-wrapper {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+//#article- .blog-item-inner-wrapper,
+.content-collection .content-wrapper,
+.item-pagination--prev-next,
+.page-section:not(:first-of-type):not(.content-collection) .content-wrapper,
+.page-section:first-of-type:not(.has-background) .content-wrapper,
+.page-section:only-child .content-wrapper,
+#footer-sections .page-section:first-of-type .content-wrapper {
+  
+  position: relative;
+  
+  .page-section.dark & {
+    background-color: #000;
+  }
+  
+    &:after {
+      bottom: 0;
+      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+      -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1 !important;
+    }
+}
+
+#sections {
+  
+  .page-section {
+    
+    &.background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) {
+      padding-top: 0;
+      
+      .section-background {
+        top: 0;
+      }
+    }
+    
+    &.section-height--small, &.section-height--medium, &.section-height--large {
+      min-height: 20vh !important;      
+    }
+    
+    &:not(.section-height--small):not(.section-height--medium):not(.section-height--large) {
+      min-height: 0 !important;      
+    }
+
+
+    &.has-background:first-of-type {
+      & > .section-border .section-background {
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+      }
+
+      &.background-width--full-bleed {
+        & > .section-background {
+          z-index: -3;
+        }
+        &.section-height--large {
+          padding-bottom: @large-overlap;
+        }
+        &.section-height--medium {
+          padding-bottom: @medium-overlap;
+        }
+        &.section-height--small {
+          padding-bottom: @small-overlap;
+        }
+      }
+      
+      & + .page-section {
+        .content-wrapper {
+          margin-top: -@large-overlap/4;
+        }
+      }
+    }
+    
+    &:first-of-type:not(.has-background) {
+      
+      .content-wrapper {
+        //max-width: ~"calc(1084px + 6vw)";
+      }
+    }
+    
+    &.background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) {
+      justify-content: center;
+      padding-bottom: 0;
+              
+      .section-background {
+        bottom: 0;
+        left: auto;
+        max-width: ~"calc(1084px + 6vw)";
+        right: auto;
+        width: 100%;
+      }
+    }
+  }
+  
+  .page-section.has-background:first-of-type:not(.background-width--inset) {
+    &.section-height--large {
+      margin-bottom: -@large-overlap;
+      .content-wrapper {
+        top: -@large-overlap/2;
+      }
+    }
+    &.section-height--medium {
+      margin-bottom: -@medium-overlap;
+      .content-wrapper {
+        top: -@medium-overlap/2;
+      }
+    }
+    &.section-height--small {
+      margin-bottom: -@small-overlap;
+      .content-wrapper {
+        top: -@small-overlap/2;
+      }
+    }
+  }
+}
+
+.item-pagination--prev-next {
+  box-sizing: border-box;
+  margin: 0 auto 0;
+}
+
+#gridThumbs,
+.gallery-section .content-wrapper,
+.item-pagination,
+.collection-content-wrapper,
+.content-collection .content-wrapper,
+.full-bleed-section .content-wrapper
+{
+  max-width: ~"calc(1084px + 6vw)" !important;
+}
+
+#footer-sections {
+  .content-wrapper {
+    margin-top: 50px;
+  }
+}

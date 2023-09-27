@@ -1,24 +1,23 @@
 // Cookie Banner
 .sqs-cookie-banner-v2 {
-  background-color: rgb(49,137,180) !important;
-  background-image: url(https://static1.squarespace.com/static/508f3c32e4b0979eac730009/t/5efb810d831f74754a48c03e/1593540877452/Cookies-small.png);
-  background-position: 90% 83%;
+  background-color: @darkAccent !important;
+  background-image: url(https://images.squarespace-cdn.com/content/64527b67c95f5467f7f34334/206ed56d-ac77-4420-a4db-200ec64c2265/Cookies-small.png?content-type=image%2Fpng);
+  background-position: 95% 88%;
   background-repeat: no-repeat;
   background-size: 80px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.35);
+  
+  .sqs-cookie-banner-v2-acceptWrapper {
+    align-self: flex-start;
+  }
+  
   p {
-    color: white !important;
+    color: @white !important;
     font-size: 16px;
   }
+  
   button {
-    background-color: #fff !important;
-    border-color: white !important;
-    border-radius: 6px;
-    font-family: katarine-web;
-    font-size: 1.2rem;
-    letter-spacing: 0 !important;
-    padding: 10px !important;
-    width: auto;
+    color: @white !important;
   }
 }

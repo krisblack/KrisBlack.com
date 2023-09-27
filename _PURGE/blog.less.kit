@@ -111,14 +111,17 @@
   .sqs-block.image-block {
         
     figcaption {
+      color: lighten(@caption-black, 30%);
+      font-family: blambot-casual;
       font-size: 0.8rem;
+      letter-spacing: 0.04em;
       margin: -1rem auto 0;
       padding: 1rem 1rem 0.25rem;
       text-align: center;
       width: 75%;
       
       &:after {
-      	background-color: @caption-black;
+      	background-color: lighten(@caption-black, 70%);
         content: "";
         display: block;
         height: 1px;
