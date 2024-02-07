@@ -7,7 +7,7 @@
       "uuidString" : "5E328821-3AC9-42D1-A4B1-621255E68FCE"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/_PURGE\/blog.less.kit" : {
       "cB" : 0,
@@ -283,7 +283,7 @@
     "creationDate" : 648100713.30046403,
     "displayValue" : "kbs.squarespace.com",
     "displayValueWasSetByUser" : 1,
-    "iconImageName" : "brackets_orange",
+    "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 1,
     "lastBuiltDate" : 680749872.77537596
   },
@@ -1111,9 +1111,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -1125,6 +1122,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
