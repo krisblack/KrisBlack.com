@@ -27,20 +27,10 @@ header {
 
 
 .header-nav-list {
-  //align-items: baseline;
-  //background-color: @caption-yellow;
-  //border: 2px solid #212121;
-  //box-shadow: 4px 4px 3px -2px hsla(0, 0%, 13%, 0.35);
-  //display: flex;
-  //justify-content: flex-end;
-  //padding: 10px 30px 10px 60px;
-  //position: relative;
   
   .header-nav-item {
     
     a {
-      //display: inline !important;
-      //padding: 0;
       margin-right: 10px;
       transition: all ease 0s;
     }
@@ -52,7 +42,6 @@ header {
     }
 
     & > a {
-      //border-top: 1px solid transparent;
       position: relative;
       
       &:after {
@@ -96,7 +85,6 @@ header {
     
     @media (min-width: 800px) {
       & > a {
-        //padding-right: 10px;
       }
     }
     
@@ -296,15 +284,43 @@ header {
       order: 1;
       position: absolute;
       left: -60px;
-      top: -20px;
-      transform: skew(4deg);
+      top: -13px;
       
       .header-actions-action--cart {
         margin: 0 0 0 30px !important;
         
         a {
-          border: 2px solid @caption-black;
+          
+          .icon--cart {
+            background-color: @caption-yellow;
+            border: 2px solid @caption-black;
+            border-radius: 4px;
+            padding: 8px 8px 8px 8px;
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.25));
+          }
+          
+          .icon-cart-quantity {
+            align-items: center;
+            background-color: #171812;
+            border-radius: 50%;
+            color: white !important;
+            display: flex;
+            font-size: 16px;
+            height: 1.25em;
+            justify-content: center;
+            left: -0.4em;
+            padding: 2px;
+            top: -0.2em;
+            width: 1.25em;
+          }
+
+          &:hover {
+            .icon--cart {
+              background-color: @caption-active;
+            }
+          }
         }
+        
       }
     }
 
@@ -328,6 +344,7 @@ header {
 :not(.header--menu-open) .header-actions .header-icon:not(.header-icon-border-shape-none).header-icon-border-style-solid, :not(.header--menu-open) .header-actions .header-icon:not(.header-icon-border-shape-none).header-icon-border-style-outline:hover {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.25) !important;
 }
+
 
 .header-menu-nav {
   
@@ -430,6 +447,22 @@ header {
     display: none;
     visibility: hidden;
   }
+}
+
+.header-icon[href*="mastodon"] {
+  height: 28px !important;
+  
+    &::before {
+      .fontawesomeBrands;
+      content: "\f4f6";
+      font-size: 24px;
+      margin-top: 0.05em;
+    }
+    
+    svg {
+      display: none;
+      visibility: hidden;
+    }
 }
 
 // End Site Header
