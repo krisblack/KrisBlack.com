@@ -8,10 +8,63 @@
 }
 
 // Newsletter Block
+
+.newsletter-block {
+  .newsletter-form-header-title {
+    margin-bottom: 0;
+  }
+  
+  .newsletter-form-header-description {
+    p {
+      margin: 0;
+    }
+  }
+  
+  .newsletter-form-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-bottom: 0 !important;
+  }
+  
+  .newsletter-form-name-fieldset {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .newsletter-form-fields-wrapper,
+  .newsletter-form-button-wrapper {
+    margin-top: 0;
+  }
+  
+  .newsletter-form-field-wrapper {
+    min-width: auto;
+    padding: 0 0 .5rem 0;
+    width: 50%;
+    
+    &.email {
+      padding-top: 0;
+      width: 100%;
+    }
+  }
+
+  .newsletter-form-footnote {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .form-fields {
   .field-element {
     border: 2px solid @black;
     box-shadow: inset 2px 2px 8px rgba(0,0,0,0.25) !important;
     padding: 0.5rem 1rem !important;
   }
+}
+
+.summary-title {
+  font-family: var(--heading-font-font-family);
+  letter-spacing: -0.03em;
+  line-height: 1em !important;
 }

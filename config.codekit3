@@ -7,7 +7,7 @@
       "uuidString" : "5E328821-3AC9-42D1-A4B1-621255E68FCE"
     }
   ],
-  "creatorBuild" : "34564",
+  "creatorBuild" : "34592",
   "files" : {
     "\/_PURGE\/blog.less.kit" : {
       "cB" : 0,
@@ -229,6 +229,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/build\/less\/site-header.less.less",
+      "oF" : 0
+    },
+    "\/less\/social.less.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/less\/social.less.less",
       "oF" : 0
     },
     "\/less\/variables.less.kit" : {
@@ -785,10 +793,6 @@
         "active" : 0,
         "optionString" : "{'before': true, 'after': true, 'overrides': {}}"
       },
-      "line-comment-position" : {
-        "active" : 0,
-        "optionString" : "{'position': 'above'}"
-      },
       "linebreak-style" : {
         "active" : 0,
         "optionString" : "'unix'"
@@ -840,10 +844,6 @@
       "max-statements-per-line" : {
         "active" : 0,
         "optionString" : "{'max': 1}"
-      },
-      "multiline-comment-style" : {
-        "active" : 0,
-        "optionString" : "'starred-block'"
       },
       "multiline-ternary" : {
         "active" : 0,
@@ -986,7 +986,8 @@
         "active" : 0
       },
       "no-extra-boolean-cast" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'enforceForInnerExpressions': false}"
       },
       "no-extra-label" : {
         "active" : 0
@@ -1071,7 +1072,8 @@
         "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': false, 'enforceConst': false, 'detectObjects': false}"
       },
       "no-misleading-character-class" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowEscape': false}"
       },
       "no-mixed-operators" : {
         "active" : 0,
@@ -1439,7 +1441,8 @@
         "active" : 0
       },
       "require-unicode-regexp" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'requireFlag': 'u'}"
       },
       "require-yield" : {
         "active" : 1
@@ -1869,6 +1872,7 @@
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
+    "tsJSXFragmentFactory" : "Fragment",
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,

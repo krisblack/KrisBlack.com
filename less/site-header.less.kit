@@ -13,19 +13,6 @@
   }
 }
 
-
-header {
-  &.black-bold {
-    .header-title-logo, .header-mobile-logo {
-      img {
-        filter: invert(1);
-      }
-    }
-  }
-}
-
-
-
 .header-nav-list {
   
   .header-nav-item {
@@ -260,6 +247,7 @@ header {
       order: 10;
       
       a {
+        color: @black;
         font-family: var(--body-font-font-family);
         font-size: 0.8rem !important;
         font-weight: normal;
@@ -295,6 +283,7 @@ header {
             background-color: @caption-yellow;
             border: 2px solid @caption-black;
             border-radius: 4px;
+            color: @black;
             padding: 8px 8px 8px 8px;
             filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.25));
           }
@@ -413,56 +402,6 @@ header {
       }
     }
   }
-}
-
-.header-icon[href*="patreon"] {
-  background-color: @patreonColor;
-  border-radius: 20%;
-  position: relative;
-
-  &::before {
-    background: #fff;
-    box-sizing: border-box;
-    content: "";
-    display: block;
-    height: 15px;
-    left: 5px;
-    position: absolute;
-    top: 5px;
-    width: 3px;
-  }
-  
-  &::after {
-    background: #fff;
-    box-sizing: border-box;
-    border-radius: 100px;
-    content: "";
-    height: 10px;
-    left: 10px;
-    position: absolute;
-    top: 5px;
-    width: 10px;
-  }  
-  svg {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-.header-icon[href*="mastodon"] {
-  height: 28px !important;
-  
-    &::before {
-      .fontawesomeBrands;
-      content: "\f4f6";
-      font-size: 24px;
-      margin-top: 0.05em;
-    }
-    
-    svg {
-      display: none;
-      visibility: hidden;
-    }
 }
 
 // End Site Header

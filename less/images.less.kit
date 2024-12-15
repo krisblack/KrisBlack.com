@@ -1,3 +1,19 @@
 .gallery-masonry-item {
   box-shadow: 0 0 2px 1px hsla(235,21%,22%,0.15);
 }
+
+.ProductItem-gallery-slides-item,
+.list-item-media-inner,
+.grid-image,
+.sqs-image-shape-container-element,
+.summary-item-list .summary-thumbnail-container .summary-thumbnail-image ,
+.collection-content-wrapper .image-wrapper {
+  border: 1px solid @black;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+// Prevents right side of images from be cut off
+.ProductItem-gallery-slides-item {
+  width: 99%;
+}

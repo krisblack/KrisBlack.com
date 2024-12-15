@@ -5,3 +5,68 @@
     overflow: hidden;
   }
 }
+
+// Portfolio Page
+
+#collection-674f7ed3cb118028e0d71d5b {
+  .user-items-list-simple {
+    .list-item {
+      padding: 30px !important;
+      
+      .list-item-content {
+        order: 2;
+        
+        .list-item-content__description {
+          p{
+            line-height: 1.1;
+          }
+        }
+        .list-item-content__button {          
+          padding: var(--primaryButtonPadding);
+        }
+      }
+      .list-item-media {
+        order: 1;
+        
+        .list-item-media-inner {
+          //border-radius: 1rem;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .list-item-content {
+      margin-top: 15px;
+    }
+    
+    .list-item-media {
+      margin-top: 0 !important;
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+  
+    .user-items-list-simple {
+      .list-item {
+        align-items: center;
+        flex-direction: row;
+        gap: 4vw;
+        
+        .list-item-content {
+          flex-shrink: 0;
+          order: 1;
+          width: 40%;
+        }
+        .list-item-media {
+          margin-top: 0 !important;
+          order: 2;
+          
+          .list-item-media-inner {
+          }
+        }
+      }
+    }
+  }
+}

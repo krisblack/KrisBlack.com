@@ -1,0 +1,106 @@
+.sqs-block-socialaccountlinks-v2 .sqs-svg-icon--wrapper[href*="patreon"] {
+
+&::before {
+	.fontawesomeBrands;
+	color: inherit;
+	content: "\f3d9";
+	display: block;
+	font-size: 130%;
+	height: 100%;
+	width: 100%;
+	margin-top: -0.15em;}
+	
+	svg {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.sqs-block-socialaccountlinks-v2 .sqs-svg-icon--wrapper[href*="mastodon"] {
+
+	&::before {
+		.fontawesomeBrands;
+		color: inherit;
+		content: "\f4f6";
+		display: block;
+		font-size: 149%;
+		height: 100%;
+		width: 100%;
+		margin-top: -0.15em;
+	}
+		
+	svg {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.sqs-block-socialaccountlinks-v2 .sqs-svg-icon--wrapper[href*="bsky"] {
+
+	&::before {
+		.fontawesomeBrands;
+		color: inherit;
+		content: "\e671";
+		display: block;
+		font-size: 149%;
+		height: 100%;
+		width: 100%;
+		margin-top: -0.15em;
+	}
+		
+	svg {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.header-icon[href*="patreon"] {
+	
+	&::before {
+		.fontawesomeBrands;
+		color: @black;
+		content: "\f3d9";
+		vertical-align: middle;
+	}
+
+	svg {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.header-icon[href*="mastodon"] {
+	height: 28px !important;
+	
+		&::before {
+			.fontawesomeBrands;
+			color: @black;
+			content: "\f4f6";
+			font-size: 24px;
+			margin-top: 0.05em;
+		}
+		
+		svg {
+			display: none;
+			visibility: hidden;
+		}
+}
+
+a.header-icon {
+	&[href*="bsky"] {
+		height: 28px !important;
+	
+		&::before {
+			.fontawesomeBrands;
+			color: @black;
+			content: "\e671";
+			font-size: 24px;
+			margin-top: 0.05em;
+		}
+		
+		svg {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
