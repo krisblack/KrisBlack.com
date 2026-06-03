@@ -1,0 +1,99 @@
+// .sqs-system-button {
+//   background-color: lighten(@comic-orange, 20%) !important;
+//   border: 2px solid @caption-black !important;
+//   border-radius: 300px;
+//   box-shadow: inset 0 0 1px 2px lighten(@comic-yellow, 25%);
+//   color: @caption-black !important;
+//   text-shadow: 0.05em 0.05em 1px fadeout(#fff, 50%), -0.03em -0.03em 1px @comic-orange;
+//   transition: all ease-in-out 0.1s;
+//   
+//   &:hover {
+//     box-shadow: inset 0 0 0 0 lighten(@comic-yellow, 25%);
+//     transition: all ease-in-out 0.1s;
+//   }
+// }
+
+.sqs-block-button-element,
+.image-button-inner a,
+.lightbox-handle,
+.sqs-add-to-cart-button,
+.form-button-wrapper,
+.header-menu-cta .theme-btn--primary.btn,
+.header-actions-action--cta .theme-btn--primary-inverse {
+  background-color: lighten(@comic-yellow, 25%) !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 2px 0 lighten(@comic-yellow, 25%);
+  //color: @caption-black !important;
+  position: relative;
+  text-shadow: 0.05em 0.05em 1px fadeout(#fff, 50%), -0.03em -0.03em 1px @comic-orange;
+  z-index: 1;
+  
+  &:before {
+    background-color: lighten(@comic-orange, 20%);
+    box-shadow: 0 0 1px 0 @comic-orange;
+    border-radius: 300px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 95%;
+    transform: translate(0.6em, 0.1em) rotate(2deg);
+    transition: all ease-in-out 0.1s;
+    z-index: -1;
+  }
+  
+  &:after {
+    border: 2px solid @caption-black;
+    border-radius: 300px;
+    box-shadow: 0 0 4px 1px desaturate(fadeout(@comic-orange, 30%), 30%);
+    content: "";
+    display: block;
+    left: 0.1em;
+    position: absolute;
+    top: 0.2em;
+    height: 80%;
+    transition: all ease-in-out 0.1s;
+  width: 95%;
+  }
+  
+  &:hover {
+    background-color: transparent !important;
+    box-shadow: none;
+    color: @caption-black !important;
+    
+    &:before {
+      left: 0.05em;
+      height: 100%;
+      top: -0.05em;
+      transform: translate(0em, 0em) rotate(0deg);
+      transition: all ease-in-out 0.1s;
+      width: 100%;
+    }
+    
+    &:after {
+      box-shadow: inset 0 0 8px 2px saturate(lighten(@comic-orange, 10%), 60%);
+      height: 100%;
+      left: -0.1em;
+      top: -0.15em;
+      transition: all ease-in-out 0.1s;
+      width: 100%;
+    }
+  }
+}
+
+// Fitting Button Style to wrapper div of form input.button (inputs and other self-closing elements can't have pseudo elements)
+.form-button-wrapper {
+  border-radius: 300px;
+  cursor: pointer !important;
+  display: inline-block;
+  
+  .button {
+    border: none !important;
+    
+    &:hover {
+      cursor: pointer !important;
+    }
+  }
+}
