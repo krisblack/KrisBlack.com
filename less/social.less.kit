@@ -71,13 +71,13 @@
 }
 
 .header-icon[href*="mastodon"] {
-	height: 28px !important;
+	height: 24px !important;
 	
 		&::before {
 			.fontawesomeBrands;
 			color: @black;
 			content: "\f4f6";
-			font-size: 24px;
+			font-size: 21px;
 			margin-top: 0.05em;
 		}
 		
@@ -89,19 +89,30 @@
 
 a.header-icon {
 	&[href*="bsky"] {
-		height: 28px !important;
+		height: 24px !important;
 	
 		&::before {
 			.fontawesomeBrands;
 			color: @black;
 			content: "\e671";
-			font-size: 24px;
+			font-size: 19px;
 			margin-top: 0.05em;
 		}
 		
 		svg {
 			display: none;
 			visibility: hidden;
+		}
+	}
+}
+
+.social-icons-style-solid {
+	.sqs-svg-icon--wrapper {
+		&::before {
+			align-items: center;		
+			color: @white !important;
+			display: flex !important;
+			justify-content: center;
 		}
 	}
 }
